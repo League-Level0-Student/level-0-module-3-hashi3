@@ -4,18 +4,26 @@
 
 package elseif;
 
-import javax.swing.JOptionPane;
+import javax.swing.JOptionPane; 
 
 public class BirthdayReminder {
 
 	public static void main(String[] args) {
 	
 		// 1. correct the birthdays for your family below
+		String input = JOptionPane.showInputDialog("what birthday do you want?");
 		String momsBirthday = "January 24th";
 		String dadsBirthday = "June 9th";
 		String myBirthday = "April 16th";
 
 		// 2. Find out which birthday the user wants and and store their response in a variable
+	if(input.equals("mom")){
+		System.out.println(momsBirthday);
+	}
+	else if(input.equals("dad") ) {
+		System.out.println(dadsBirthday);
+		
+	}
 	
 		// 3. Print out what the user typed
 		
